@@ -1,8 +1,18 @@
-#include <QCoreApplication>
+#include <QApplication>
+#include <QWidget>
+#include <QGraphicsBlurEffect>
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <src/mydecoder.h>
+#include <QDebug>
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
 
-    return a.exec();
+    myDecoder mydecoder("Titanic.mkv");
+
+    mydecoder.show();
+    qDebug() << "myDecoder show---";
+
+    return app.exec();
 }
