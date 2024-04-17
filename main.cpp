@@ -3,7 +3,7 @@
 #include <QGraphicsBlurEffect>
 #include <QVBoxLayout>
 #include <QPushButton>
-#include <src/mydecoder.h>
+#include <mydecoder.h>
 #include <QDebug>
 
 int main(int argc, char *argv[]) {
